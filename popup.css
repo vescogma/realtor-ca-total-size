@@ -1,0 +1,29 @@
+#problem {
+  display: none;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.25rem;
+  column-gap: 0.5rem;
+  align-items: baseline;
+}
+
+#grid > a {
+  white-space: nowrap;
+}
+
+#grid > .level-size {
+  font-weight: 600;
+}
+
+#grid > .level-size > .level-unit {
+  font-weight: 400;
+}
+
+#grid > .level-separator {
+  border-bottom: 1px solid lightgrey;
+  grid-column-start: 1;
+  grid-column-end: end;
+}
