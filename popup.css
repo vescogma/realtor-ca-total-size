@@ -1,29 +1,131 @@
+body {
+  min-width: 8rem;
+  width: fit-content;
+}
+
+section .info {
+  display: flex;
+  align-items: center;
+}
+
+section .info img {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+#invalid-site {
+  display: none;
+}
+#invalid-listing {
+  display: none;
+}
+#empty {
+  display: none;
+}
 #problem {
   display: none;
 }
 
 #grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 0.25rem;
   column-gap: 0.5rem;
-  align-items: baseline;
+  align-items: center;
 }
 
-#grid > a {
+/* LEVELS */
+
+#grid .level-title {
+  display: flex;
+  align-items: center;
+  grid-column-start: 1;
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+#grid .level-title img {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+#grid .level-title .level-name {
+  white-space: nowrap;
+  font-size: 0.875rem;
+}
+
+#grid .level-info {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+#grid .level-info .level-size {
+  text-align: end;
+  font-weight: 600;
+  font-size: 0.875rem;
   white-space: nowrap;
 }
 
-#grid > .level-size {
-  font-weight: 600;
-}
-
-#grid > .level-size > .level-unit {
+#grid .level-info .level-unit {
   font-weight: 400;
 }
 
-#grid > .level-separator {
-  border-bottom: 1px solid lightgrey;
+#grid .level-separator {
+  border-bottom: 1px solid gray;
   grid-column-start: 1;
   grid-column-end: end;
+}
+
+/* ROOMS */
+
+#grid .room-title {
+  display: flex;
+  align-items: center;
+  grid-column-start: 1;
+}
+
+#grid .room-title img {
+  height: 0.75rem;
+  width: 0.75rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#grid .room-title .room-name {
+  white-space: nowrap;
+}
+
+#grid .room-info {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#grid .room-info .room-size {
+  text-align: end;
+  white-space: nowrap;
+}
+
+#grid .room-info .room-dim {
+  font-weight: 400;
+  white-space: nowrap;
+  margin-right: 0.5rem;
+  color: grey;
+}
+
+#grid .room-info .room-unit {
+  font-weight: 400;
+}
+
+#grid .room-separator {
+  border-bottom: 1px solid lightgray;
+  grid-column-start: 1;
+  grid-column-end: end;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }

@@ -1,7 +1,7 @@
 {
   "name": "Realtor.ca Tools",
-  "description": "Get the total size of homes and for each level from a realtor.ca listing page.",
-  "version": "1.0",
+  "description": "Get the home size level breakdown from a realtor.ca listing page.",
+  "version": "1.2",
   "manifest_version": 3,
   "permissions": ["activeTab", "scripting"],
   "action": {

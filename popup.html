@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
     <section id="loading">
-      <a>Loading...</a>
+      <div class="info">
+        <img src="images/loader.svg" />
+        <span>Loading...</span>
+      </div>
+    </section>
+    <section id="invalid-site">
+      <div class="info">
+        <img src="images/alert-triangle.svg" />
+        <span>
+          Visit <a href="https://realtor.ca">realtor.ca</a> to use the
+          extension.
+        </span>
+      </div>
+    </section>
+    <section id="invalid-listing">
+      <div class="info">
+        <img src="images/info.svg" />
+        <span>Please view a listing.</span>
+      </div>
+    </section>
+    <section id="empty">
+      <div class="info">
+        <img src="images/thumbs-down.svg" />
+        <span>Could not find room data.</span>
+      </div>
     </section>
     <section id="problem">
-      <a>Problem!</a>
+      <div class="info">
+        <img src="images/frown.svg" />
+        <span>There was a problem.</span>
+      </div>
     </section>
     <section id="grid"></section>
     <script src="popup.js"></script>
